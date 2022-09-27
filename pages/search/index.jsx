@@ -18,7 +18,7 @@ export default function index({ query, results }) {
             </h1>
             {results.map((result) => {
                return (
-                  <Link key={result.id} href={`/comic/${result.id}`}>
+                  <Link href={`/comic/${result.id}`} key={result.id}>
                      <a className="flex flex-row content-center justify-start bg-slate-300 hover:bg-slate-50">
                         <Image
                            width="50"
